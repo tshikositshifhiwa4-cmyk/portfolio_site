@@ -154,12 +154,12 @@ body {
 }
 
 .hero-name {
-  font-size: 1.1rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
   color: var(--light);
   text-transform: uppercase;
-  letter-spacing: 0.22em;
-  margin-bottom: 1rem;
-  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.9rem;
+  font-weight: 900;
 }
 
 .hero-title {
