@@ -290,9 +290,15 @@
       position: relative;
       border-radius: 28px;
       overflow: hidden;
-      border: 1px solid rgba(59,130,246,0.18);
+      border: 2px solid rgba(59,130,246,0.25);
       background: linear-gradient(160deg, rgba(59,130,246,0.1), rgba(236,72,153,0.04));
-      box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 1px rgba(59,130,246,0.1);
+      box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 1px rgba(59,130,246,0.1), 0 0 20px rgba(236,72,153,0.2);
+      animation: borderPulse 3s ease-in-out infinite;
+    }
+
+    @keyframes borderPulse {
+      0%, 100% { border-color: rgba(59,130,246,0.25); box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 1px rgba(59,130,246,0.1), 0 0 20px rgba(236,72,153,0.2); }
+      50% { border-color: rgba(236,72,153,0.35); box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 1px rgba(236,72,153,0.15), 0 0 30px rgba(236,72,153,0.35); }
     }
 
     .hero__photo-wrap img {
@@ -301,6 +307,12 @@
       object-fit: cover;
       display: block;
       filter: brightness(0.92) saturate(1.1);
+      animation: photoFloat 4s ease-in-out infinite;
+    }
+
+    @keyframes photoFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
     }
 
     .hero__stat {
@@ -806,14 +818,6 @@
           <div class="hero__photo-wrap">
             <img src="profile.png" alt="Tshifhiwa Tshikosi" />
           </div>
-          <div class="hero__stat hero__stat--a">
-            <strong>4</strong>
-            <span>Projects</span>
-          </div>
-          <div class="hero__stat hero__stat--b">
-            <strong>JHB</strong>
-            <span>South Africa</span>
-          </div>
         </div>
       </div>
     </div>
@@ -899,22 +903,22 @@
         </div>
         <div class="caps__grid">
           <div class="cap-card reveal">
-            <div class="cap-card__icon">⚙️</div>
+            <div class="cap-card__icon"></div>
             <h3>Data Engineering</h3>
             <p>ETL pipelines, data ingestion, warehousing, and quality workstreams built for upstream reliability and downstream trust.</p>
           </div>
           <div class="cap-card reveal">
-            <div class="cap-card__icon">🗄️</div>
+            <div class="cap-card__icon"></div>
             <h3>SQL & Analytics</h3>
             <p>Database design, complex SQL queries, and analytics across customer churn, sales operations, and performance metrics.</p>
           </div>
           <div class="cap-card reveal">
-            <div class="cap-card__icon">📊</div>
+            <div class="cap-card__icon"></div>
             <h3>Business Reporting</h3>
             <p>Structured insights, dashboards, and documentation that align technical output with measurable business decisions.</p>
           </div>
           <div class="cap-card reveal">
-            <div class="cap-card__icon">🔁</div>
+            <div class="cap-card__icon"></div>
             <h3>Process Optimisation</h3>
             <p>Clean data workflows, validation checks, automation planning, and scalable architecture for consistent deliverables.</p>
           </div>
@@ -937,7 +941,7 @@
               <span class="proj-card__num">01</span>
             </div>
             <h3>Star Schema Analytics Warehouse</h3>
-            <p class="proj-card__desc">Transformed a messy PC sales dataset into a clean, queryable star-schema warehouse. Focused on dimension design, modular ETL pipelines, and rigorous data validation.</p>
+            <p class="proj-card__desc">Transformed a messy PC sales dataset into a clean, queryable star-schema warehouse. Focused on dimension design, modular ETL pipelines, and rigorous data validation</p>
             <ul class="proj-card__highlights">
               <li>10,000-row dataset cleaned and fully modelled</li>
               <li>Data quality checks, deduplication, and validation</li>
@@ -957,7 +961,7 @@
               <span class="proj-card__num">02</span>
             </div>
             <h3>Modern Medallion Pipeline</h3>
-            <p class="proj-card__desc">Built a Databricks Bronze → Silver → Gold pipeline applying PySpark and SQL to deliver an analytics-ready star schema for automotive sales insights.</p>
+            <p class="proj-card__desc">Built a Databricks Bronze, Silver, Gold pipeline applying PySpark and SQL to deliver an analytics-ready star schema for automotive sales insights.</p>
             <ul class="proj-card__highlights">
               <li>Bronze ingestion, Silver cleaning, Gold modelling</li>
               <li>PySpark transformations and Delta Lake best practices</li>
@@ -977,7 +981,7 @@
               <span class="proj-card__num">03</span>
             </div>
             <h3>Churn Analysis Architecture</h3>
-            <p class="proj-card__desc">Designed a Bronze → Silver → Gold analytics architecture for customer churn data. Used SQL-based feature engineering and segmentation to derive retention strategy recommendations.</p>
+            <p class="proj-card__desc">Designed a Bronze, Silver, Gold analytics architecture for customer churn data. Used SQL-based feature engineering and segmentation to derive retention strategy recommendations.</p>
             <ul class="proj-card__highlights">
               <li>Churn drivers and revenue impact insights surfaced</li>
               <li>Cleaned and standardised customer data pipeline</li>
