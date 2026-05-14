@@ -1,81 +1,182 @@
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tshifhiwa Tshikosi · Data Portfolio</title>
+  <title>Tshifhiwa Tshikosi • Data & Analytics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="wrap">
-    <nav class="nav">
-      <div class="logo">TT<span>.</span></div>
-      <div>Luxury Data Portfolio</div>
-    </nav>
+  <nav class="navbar">
+    <div class="navbar-wrap">
+      <div class="logo">T<span>.</span></div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="hero">
-      <div>
-        <div class="badge">Open to opportunities</div>
-        <h1>Tshifhiwa <span>Tshikosi</span></h1>
-        <p><strong>Data Analyst • Analytics Engineer • Junior Data Engineer</strong><br>Designing scalable data systems, transforming raw information into business-ready intelligence.</p>
-        <div class="signature">Turning raw data into structured stories.</div>
-        <div class="tags">
-          <span class="tag">SQL</span>
-          <span class="tag">ETL Pipelines</span>
-          <span class="tag">Databricks</span>
-          <span class="tag">PySpark</span>
-          <span class="tag">Star Schema</span>
-          <span class="tag">Business Intelligence</span>
-        </div>
-        <div class="btns">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn secondary">Let’s Build</a>
-        </div>
-      </div>
-
-      <div class="profile-card">
-        <img src="profile.png" alt="Tshifhiwa Tshikosi Profile">
-        <div class="profile-meta">
-          <span>Johannesburg, SA</span>
-          <span>Premium Data Brand</span>
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          I build data systems<br>
+          <span class="gradient-text">that actually matter</span>
+        </h1>
+        <p class="hero-subtitle">
+          I turn messy data into clean insights. Whether it's setting up a data warehouse, 
+          crafting ETL pipelines, or building dashboards that stakeholders actually use—I know how to get it done.
+        </p>
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-secondary">Let's talk</a>
         </div>
       </div>
-    </section>
-
-    <section id="projects">
-      <h2>Built on elegance.<br>Driven by insight.</h2>
-      <p style="max-width:700px;color:var(--muted);">I build polished, business-focused data systems that combine analytical precision with presentation excellence — from warehousing and ETL to stakeholder-ready reporting.</p>
-
-      <div class="cards">
-        <div class="card">
-          <h3>PC Sales Intelligence Warehouse</h3>
-          <p>Structured fragmented sales data into a refined star-schema architecture for trustworthy business analytics.</p>
-        </div>
-        <div class="card">
-          <h3>Modern Medallion Automotive Pipeline</h3>
-          <p>Designed Bronze → Silver → Gold architecture with Databricks and PySpark for scalable reporting.</p>
-        </div>
-        <div class="card">
-          <h3>Customer Churn Strategy Intelligence</h3>
-          <p>Engineered retention-focused analytics systems to transform churn data into strategic action.</p>
+      <div class="hero-visual">
+        <div class="profile-img-wrapper">
+          <img src="profile.png" alt="Tshifhiwa" class="profile-img">
         </div>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <section id="contact">
-      <h2>Ready to build<br>beautiful systems with data.</h2>
-      <p style="color:var(--muted);margin-top:1rem;">Remote • Hybrid • Analytics • Engineering • BI</p>
-    </section>
+  <section id="work" class="projects-section">
+    <div class="section-wrap">
+      <h2 class="section-title">Work I've done</h2>
+      <p class="section-desc">A mix of data warehousing, ETL, analytics, and dashboards. Real problems, real solutions.</p>
 
-    <footer>
-      Built with strategy, elegance, and data.
-    </footer>
-  </div>
+      <div class="carousel">
+        <div class="carousel-track">
+          <article class="project-card">
+            <div class="project-badge">Warehouse</div>
+            <h3>PC Sales Data Warehouse</h3>
+            <p>Took 10,000 messy sales records and built a clean star-schema warehouse. Designed and validated 9 dimension tables, fixed data quality issues, and created the fact table. The kind of work that makes reporting teams actually happy.</p>
+            <div class="tech-tags">
+              <span>SQL Server</span>
+              <span>Star Schema</span>
+              <span>Data Validation</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-badge">Pipeline</div>
+            <h3>Car Sales Analytics Pipeline</h3>
+            <p>Built a full Medallion architecture (Bronze → Silver → Gold) for automotive sales data. Handled everything from raw ingestion to analytics-ready tables. Also created dashboards that show which sellers move inventory fastest and which regions are driving revenue.</p>
+            <div class="tech-tags">
+              <span>Databricks</span>
+              <span>PySpark</span>
+              <span>Delta Lake</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-badge">Dashboard</div>
+            <h3>Car Sales Data & Dashboard Analysis</h3>
+            <p>Analyzed vehicle sales data and built an interactive dashboard. Dug into what drives prices, which brands perform best, and seasonal patterns. The kind of insights that actually shape business decisions.</p>
+            <div class="tech-tags">
+              <span>Data Analysis</span>
+              <span>Dashboard Design</span>
+              <span>Storytelling</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-badge">Analytics</div>
+            <h3>Customer Churn Analysis</h3>
+            <p>Analyzed what makes customers leave a telecom business. Built feature engineering logic to identify high-risk segments, calculated revenue impact, and delivered recommendations that actually stuck. This is the work that prevents companies from losing money.</p>
+            <div class="tech-tags">
+              <span>Snowflake</span>
+              <span>SQL</span>
+              <span>Feature Engineering</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-badge">Excel</div>
+            <h3>Excel-Based Analytics</h3>
+            <p>Sometimes the best tool for the job is a spreadsheet. Built lookup functions, conditional logic, margin calculations, and formatted data for stakeholders who need answers fast. Clean, reliable, works every time.</p>
+            <div class="tech-tags">
+              <span>Excel Formulas</span>
+              <span>VLOOKUP</span>
+              <span>Data Cleaning</span>
+            </div>
+          </article>
+        </div>
+
+        <button class="carousel-btn prev" aria-label="Previous project">←</button>
+        <button class="carousel-btn next" aria-label="Next project">→</button>
+      </div>
+
+      <div class="carousel-dots"></div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="section-wrap">
+      <h2 class="section-title">Who I am</h2>
+      
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>What I do</h3>
+          <p>
+            I'm a data analyst and engineer focused on building systems that work. I've done everything from designing 
+            data warehouses to setting up ETL pipelines, creating dashboards, and digging into data to find what actually matters.
+          </p>
+          <p>
+            My approach is straightforward: understand the problem, build the right solution, make sure it stays clean and reliable.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>My toolkit</h3>
+          <ul class="skills-list">
+            <li>SQL (Server, Snowflake, Spark)</li>
+            <li>ETL & Data Pipelines</li>
+            <li>Data Warehouse Design</li>
+            <li>Databricks & PySpark</li>
+            <li>Dashboard & BI Tools</li>
+            <li>Data Cleaning & Validation</li>
+            <li>Analytics & Insights</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <h3>Why work with me</h3>
+          <p>
+            I don't just write code or build systems—I understand the business side. I know that data work only matters 
+            if it solves real problems. I focus on quality, clarity, and making sure everything stays maintainable.
+          </p>
+          <p>
+            I'm based in Johannesburg and open to remote, hybrid, or on-site work.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="section-wrap">
+      <h2 class="section-title">Let's build something</h2>
+      <p class="section-desc">Got a data problem? Need a warehouse built? Let's talk about it.</p>
+      
+      <div class="contact-box">
+        <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p>Location: Johannesburg, South Africa</p>
+        <p>Available for: Remote • Hybrid • Contract • Full-time</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 Tshifhiwa Tshikosi. Built from scratch, no templates.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-```
