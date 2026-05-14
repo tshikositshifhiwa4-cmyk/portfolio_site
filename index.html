@@ -15,8 +15,8 @@
       <div class="logo">T<span>.</span></div>
       <ul class="nav-menu">
         <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#work" class="nav-link">Work</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
         <li><a href="#contact" class="nav-link">Get in Touch</a></li>
       </ul>
     </div>
@@ -31,12 +31,12 @@
           <span class="gradient-text">that actually matter</span>
         </h1>
         <p class="hero-subtitle">
-          I turn messy data into clean insights. Whether it's setting up a data warehouse, 
-          crafting ETL pipelines, or building dashboards that stakeholders actually use—I know how to get it done.
+          I turn messy data into clean insights. Whether it's setting up a data warehouse,
+          crafting ETL pipelines, or building dashboards that stakeholders actually use, I know how to get it done.
         </p>
         <div class="hero-cta">
-          <a href="#work" class="btn btn-primary">See my work</a>
-          <a href="#contact" class="btn btn-secondary">Let's talk</a>
+          <a href="#about" class="btn btn-primary">About me</a>
+          <a href="#work" class="btn btn-secondary">See my work</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -47,17 +47,102 @@
     </div>
   </header>
 
+  <section id="about" class="about-section">
+    <div class="section-wrap">
+      <h2 class="section-title">Who I am</h2>
+      <p class="section-desc">I help teams turn data into trusted systems and clear insights. I prefer work that is useful, reliable, and easy to maintain.</p>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>What I do</h3>
+          <p>
+            I'm a data analyst and engineer focused on building systems that work. I've done everything from designing
+            data warehouses to setting up ETL pipelines, creating dashboards, and digging into data to find what actually matters.
+          </p>
+          <p>
+            My approach is straightforward: understand the problem, build the right solution, make sure it stays clean and reliable.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Why work with me</h3>
+          <p>
+            I don't just write code or build systems, I understand the business side. I know that data work only matters
+            if it solves real problems. I focus on quality, clarity, and making sure everything stays maintainable.
+          </p>
+          <p>
+            I'm based in Johannesburg and open to remote, hybrid, or on site work.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>My toolkit</h3>
+          <div class="skills-slider">
+            <div class="skill-item">
+              <label>SQL</label>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 95%;"></div>
+              </div>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-item">
+              <label>ETL & Data Pipelines</label>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%;"></div>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-item">
+              <label>Data Warehouse Design</label>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 88%;"></div>
+              </div>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-item">
+              <label>Databricks & PySpark</label>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%;"></div>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-item">
+              <label>Dashboard & BI Tools</label>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 82%;"></div>
+              </div>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-item">
+              <label>Data Cleaning & Validation</label>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 92%;"></div>
+              </div>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-item">
+              <label>Analytics & Insights</label>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 87%;"></div>
+              </div>
+              <span class="skill-percent">87%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="work" class="projects-section">
     <div class="section-wrap">
       <h2 class="section-title">Work I've done</h2>
-      <p class="section-desc">A mix of data warehousing, ETL, analytics, and dashboards. Real problems, real solutions.</p>
+      <p class="section-desc">A collection of data projects built for clarity, scale, and business impact.</p>
 
       <div class="carousel">
         <div class="carousel-track">
           <article class="project-card">
             <div class="project-badge">Warehouse</div>
-            <h3>PC Sales Data Warehouse</h3>
-            <p>Took 10,000 messy sales records and built a clean star-schema warehouse. Designed and validated 9 dimension tables, fixed data quality issues, and created the fact table. The kind of work that makes reporting teams actually happy.</p>
+            <h3>PC Sales Analytics Warehouse</h3>
+            <p>Took 10,000 messy sales records and built a clean star schema warehouse. Designed and validated 9 dimension tables, fixed data quality issues, and created the fact table.</p>
             <div class="tech-tags">
               <span>SQL Server</span>
               <span>Star Schema</span>
@@ -67,8 +152,8 @@
 
           <article class="project-card">
             <div class="project-badge">Pipeline</div>
-            <h3>Car Sales Analytics Pipeline</h3>
-            <p>Built a full Medallion architecture (Bronze → Silver → Gold) for automotive sales data. Handled everything from raw ingestion to analytics-ready tables. Also created dashboards that show which sellers move inventory fastest and which regions are driving revenue.</p>
+            <h3>Modern Medallion Pipeline</h3>
+            <p>Built a Medallion architecture for automotive sales data, processing raw input into analytics ready tables. Created a reliable pipeline that powers reporting and dashboarding.</p>
             <div class="tech-tags">
               <span>Databricks</span>
               <span>PySpark</span>
@@ -78,8 +163,8 @@
 
           <article class="project-card">
             <div class="project-badge">Dashboard</div>
-            <h3>Car Sales Data & Dashboard Analysis</h3>
-            <p>Analyzed vehicle sales data and built an interactive dashboard. Dug into what drives prices, which brands perform best, and seasonal patterns. The kind of insights that actually shape business decisions.</p>
+            <h3>Sales Dashboard Analytics</h3>
+            <p>Analyzed vehicle sales and built an interactive dashboard. Dug into pricing drivers, brand performance, and seasonal trends to guide business decisions.</p>
             <div class="tech-tags">
               <span>Data Analysis</span>
               <span>Dashboard Design</span>
@@ -88,9 +173,9 @@
           </article>
 
           <article class="project-card">
-            <div class="project-badge">Analytics</div>
-            <h3>Customer Churn Analysis</h3>
-            <p>Analyzed what makes customers leave a telecom business. Built feature engineering logic to identify high-risk segments, calculated revenue impact, and delivered recommendations that actually stuck. This is the work that prevents companies from losing money.</p>
+            <div class="project-badge">Architecture</div>
+            <h3>Churn Analysis Architecture</h3>
+            <p>Analyzed customer churn patterns for a telecom business. Built feature engineering logic to identify high risk segments and calculated revenue impact for better retention decisions.</p>
             <div class="tech-tags">
               <span>Snowflake</span>
               <span>SQL</span>
@@ -99,12 +184,12 @@
           </article>
 
           <article class="project-card">
-            <div class="project-badge">Excel</div>
-            <h3>Excel-Based Analytics</h3>
-            <p>Sometimes the best tool for the job is a spreadsheet. Built lookup functions, conditional logic, margin calculations, and formatted data for stakeholders who need answers fast. Clean, reliable, works every time.</p>
+            <div class="project-badge">Spreadsheet</div>
+            <h3>Business Focused Spreadsheet Analytics</h3>
+            <p>Built business ready spreadsheets with lookup formulas, conditional logic, margin calculations, and clean presentation for stakeholders who need fast answers.</p>
             <div class="tech-tags">
               <span>Excel Formulas</span>
-              <span>VLOOKUP</span>
+              <span>Lookup Logic</span>
               <span>Data Cleaning</span>
             </div>
           </article>
@@ -118,102 +203,16 @@
     </div>
   </section>
 
-  <section id="about" class="about-section">
-    <div class="section-wrap">
-      <h2 class="section-title">Who I am</h2>
-      
-      <div class="about-grid">
-        <div class="about-card">
-          <h3>What I do</h3>
-          <p>
-            I'm a data analyst and engineer focused on building systems that work. I've done everything from designing 
-            data warehouses to setting up ETL pipelines, creating dashboards, and digging into data to find what actually matters.
-          </p>
-          <p>
-            My approach is straightforward: understand the problem, build the right solution, make sure it stays clean and reliable.
-          </p>
-        </div>
-
-        <div class="about-card">
-          <h3>My toolkit</h3>
-          <div class="skills-slider">
-            <div class="skill-item">
-              <label>SQL</label>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width: 95%; animation: fillBar 1s ease 0.1s both;"></div>
-              </div>
-              <span class="skill-percent">95%</span>
-            </div>
-            <div class="skill-item">
-              <label>ETL & Data Pipelines</label>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width: 90%; animation: fillBar 1s ease 0.2s both;"></div>
-              </div>
-              <span class="skill-percent">90%</span>
-            </div>
-            <div class="skill-item">
-              <label>Data Warehouse Design</label>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width: 88%; animation: fillBar 1s ease 0.3s both;"></div>
-              </div>
-              <span class="skill-percent">88%</span>
-            </div>
-            <div class="skill-item">
-              <label>Databricks & PySpark</label>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width: 85%; animation: fillBar 1s ease 0.4s both;"></div>
-              </div>
-              <span class="skill-percent">85%</span>
-            </div>
-            <div class="skill-item">
-              <label>Dashboard & BI Tools</label>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width: 82%; animation: fillBar 1s ease 0.5s both;"></div>
-              </div>
-              <span class="skill-percent">82%</span>
-            </div>
-            <div class="skill-item">
-              <label>Data Cleaning & Validation</label>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width: 92%; animation: fillBar 1s ease 0.6s both;"></div>
-              </div>
-              <span class="skill-percent">92%</span>
-            </div>
-            <div class="skill-item">
-              <label>Analytics & Insights</label>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width: 87%; animation: fillBar 1s ease 0.7s both;"></div>
-              </div>
-              <span class="skill-percent">87%</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-card">
-          <h3>Why work with me</h3>
-          <p>
-            I don't just write code or build systems—I understand the business side. I know that data work only matters 
-            if it solves real problems. I focus on quality, clarity, and making sure everything stays maintainable.
-          </p>
-          <p>
-            I'm based in Johannesburg and open to remote, hybrid, or on-site work.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="contact" class="contact-section">
     <div class="section-wrap">
       <h2 class="section-title">Let's build something</h2>
       <p class="section-desc">Got a data problem? Need a warehouse built? Let's talk about it.</p>
-      
       <div class="contact-box">
         <p>Email: <a href="mailto:tshikositshifhiwa4@gmail.com">tshikositshifhiwa4@gmail.com</a></p>
         <p>Phone: <a href="tel:+27607410085">+27 607 410 085</a></p>
         <p>GitHub: <a href="https://github.com/tshikositshifhiwa4-cmyk" target="_blank">github.com/tshikositshifhiwa4-cmyk</a></p>
         <p>Location: Johannesburg, South Africa</p>
-        <p>Available for: Remote • Hybrid • Contract • Full-time</p>
+        <p>Available for: Remote • Hybrid • Contract • Full time</p>
       </div>
     </div>
   </section>

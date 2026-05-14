@@ -59,6 +59,18 @@ setInterval(nextSlide, 8000);
 // Initialize
 createDots();
 
+// Animate cards when they scroll into view
+const cardObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+slides.forEach(card => cardObserver.observe(card));
+
 // Smooth scroll on nav links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -69,3 +81,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
