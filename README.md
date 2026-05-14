@@ -1,56 +1,90 @@
-# Data Engineering Portfolio
+<div align="center">
 
-A recruiter-ready portfolio website showcasing data engineering, analytics, and business intelligence projects.
+# Data Portfolio
 
-## Features
+### Turning raw data into structured stories.
 
-- **Modern Dark Theme** - Premium, professional design with elegant gradients and glass morphism
-- **Responsive Design** - Mobile-optimized layout that works on all devices
-- **Project Showcase** - Featured data engineering projects with detailed descriptions
-- **Professional Branding** - Luxury typography and polished visual hierarchy
+<a href="https://tshifhiwa-tshikosi.vercel.app" target="_blank">Live Website</a> • Personal Brand • Data Engineering • Analytics Intelligence
 
-## Projects Included
+<br>
 
-1. **PC Sales Intelligence Warehouse** - Star schema data warehouse with SQL Server/Snowflake
-2. **Modern Medallion Automotive Pipeline** - Databricks Bronze → Silver → Gold ETL architecture
-3. **Customer Churn Strategy Intelligence** - Analytics-driven retention insights
-4. **Data Analytics Excel** - Business-focused spreadsheet analytics and reporting
+![HTML5](https://img.shields.io/badge/HTML5-Premium_Portfolio-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Luxury_UI-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Responsive](https://img.shields.io/badge/Responsive-Recruiter_Ready-DB7093?style=for-the-badge)
+![Vercel](https://img.shields.io/badge/Vercel-Live_Deployment-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-## Tech Stack
-
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with CSS variables and Grid/Flexbox
-- **Responsive Design** - Mobile-first approach
-- **Fonts** - Playfair Display (headings), DM Sans (body)
-
-## File Structure
-
-```
-portfolio-site/
-├── index.html         # Main portfolio page
-├── styles.css         # Complete styling and responsive design
-├── script.js          # Minimal JavaScript (optional enhancements)
-├── profile.png        # Profile image banner
-└── README.md          # Documentation
-```
-
-## Getting Started
-
-1. Clone the repository
-2. Open `index.html` in a web browser
-3. No build process required - runs locally out of the box
-
-## Customization
-
-- Edit contact details in the "Contact" section of `index.html`
-- Modify color scheme via CSS variables in `:root` in `styles.css`
-- Update project descriptions in the project cards
-
-## Author
-
-**Tshifhiwa Tshikosi**  
-Data Analyst • Analytics Engineer • Junior Data Engineer
+</div>
 
 ---
 
-Built for recruiter expectations with clean architecture and professional presentation.
+## Overview
+
+This repository houses my personal portfolio website, a digital brand experience that blends **Data Analytics, Analytics Engineering, and Junior Data Engineering** into a polished platform.
+
+Designed to reflect both technical capability and elevated presentation, this project showcases how structured systems, elegant design, and strategic storytelling can coexist.
+
+### Core Identity:
+**Built on elegance. Driven by insight.**
+
+---
+
+## Signature Features
+
+
+### Professional Technical Showcase
+- Data Engineering portfolio architecture
+- Featured medallion and warehouse projects
+- Analytics + BI positioning
+- Responsive premium layout
+- Strategic project storytelling
+
+### User Experience
+- Fully responsive design
+- Modern CSS architecture
+- Smooth visual hierarchy
+- Brand-consistent interface
+- Fast static deployment
+
+---
+
+## Featured Portfolio Projects
+
+| Project | Focus | Core Value |
+|--------|------|-------------|
+| **PC Sales Intelligence Warehouse** | SQL Server / Snowflake | Star-schema transformation for structured business intelligence |
+| **Modern Medallion Automotive Pipeline** | Databricks / PySpark | Bronze → Silver → Gold modern data architecture |
+| **Customer Churn Strategy Intelligence** | SQL / Analytics | Retention-focused insight engineering |
+| **Business Analytics Excel Intelligence** | Excel / Reporting | Spreadsheet-driven business decision support |
+
+---
+
+## Design Philosophy
+
+This portfolio was intentionally built beyond a standard developer website.
+
+### Visual Formula:
+**Personal Branding + Data Credibility + Recruiter Trust**
+
+### Typography:
+- **Playfair Display** → Editorial elegance
+- **DM Sans** → Clean technical clarity
+
+### Brand Statement:
+> Turning raw data into structured stories.
+
+---
+
+## Tech Stack
+
+```bash
+Frontend:
+- HTML5
+- CSS3
+- Responsive Design
+- Vercel Deployment
+
+Design System:
+- CSS Variables
+- Glassmorphism
+- Grid / Flexbox
+- Premium Visual Hierarchy
