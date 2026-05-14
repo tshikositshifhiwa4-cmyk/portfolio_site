@@ -67,7 +67,11 @@ body {
     transform: translateY(-10px);
   }
 }
-
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+}
 /* Navbar */
 .navbar {
   position: sticky;
@@ -147,6 +151,15 @@ body {
   gap: 3rem;
   align-items: center;
   animation: fadeInUp 0.8s ease;
+}
+
+.hero-name {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .hero-title {
@@ -405,6 +418,49 @@ body {
 .skills-list {
   list-style: none;
   padding: 0;
+}
+
+.skills-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: slideIn 0.6s ease;
+}
+
+.skill-item label {
+  min-width: 150px;
+  color: var(--light);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.skill-bar {
+  flex: 1;
+  height: 6px;
+  background: rgba(236, 72, 153, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(236, 72, 153, 0.5);
+}
+
+.skill-percent {
+  min-width: 40px;
+  text-align: right;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .skills-list li {
